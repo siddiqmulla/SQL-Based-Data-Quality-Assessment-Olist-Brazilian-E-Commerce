@@ -5,9 +5,9 @@
 
 This project presents a comprehensive SQL-based Data Quality Assessment of the Olist Brazilian E-Commerce dataset using MySQL Workbench.
 
-The assessment focuses on evaluating the completeness, uniqueness, validity, consistency, and referential integrity of customer, order, and payment data. SQL queries were developed to identify potential data quality issues, validate relationships, analyze data patterns, and generate actionable business insights.
+The assessment evaluates the completeness, uniqueness, validity, consistency, and referential integrity of customer, order, and payment data. SQL queries were developed to identify potential data quality issues, validate relationships, analyze data patterns, and generate actionable business insights.
 
-The findings are translated into a professional executive report with recommendations for improving data reliability and supporting informed business decision-making.
+The findings are documented in a professional executive report with recommendations for improving data reliability and supporting informed business decision-making.
 
 ## Business Objective
 
@@ -46,8 +46,6 @@ The dataset contains approximately 100K order records and provides a practical f
 
 ## Data Quality Assessment
 
-The assessment includes the following dimensions:
-
 ### 1. Data Completeness
 Evaluated missing values, NULLs, and blank fields across customer, order, and payment attributes.
 
@@ -70,7 +68,7 @@ Analyzed negative, zero, and unusually high payment values for further review.
 Examined order status distributions, payment method patterns, customer geography, and payment value statistics.
 
 ### 8. Record Reconciliation
-Compared imported database record counts against the dataset reference counts.
+Compared imported database record counts against dataset reference counts.
 
 ## Key Findings
 
@@ -89,8 +87,6 @@ The assessment established a positive structural baseline across the selected da
 
 ## Recommendations
 
-Based on the assessment, the following improvements are recommended:
-
 - Implement completeness rules that detect NULL, blank, and placeholder values.
 - Establish lifecycle-aware validation rules for order timestamps.
 - Investigate timestamp sequence anomalies using source records.
@@ -99,6 +95,25 @@ Based on the assessment, the following improvements are recommended:
 - Establish a data quality rule catalogue with thresholds, severity levels, and ownership.
 - Maintain structured exception reporting and remediation tracking.
 - Preserve source data and apply approved corrections through controlled data processing layers.
+
+## Project Resources
+
+All project resources are available through the links below.
+
+### 1. Dataset
+[Olist Brazilian E-Commerce Dataset – Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+
+### 2. SQL Query File
+[View SQL Data Quality Assessment Queries](https://drive.google.com/file/d/1v--Hg0ywTknjfbpVjsKKGHc6VnSafNPt/view?usp=sharing)
+
+### 3. Output Files
+[View Excel SQL Assessment Results](https://docs.google.com/spreadsheets/d/1rxdkELTBQhC_MLgON1e_PJovDiY3yxay/edit?usp=sharing&ouid=114671762788041023397&rtpof=true&sd=true)
+
+### 4. Screenshots
+[View SQL Query Execution Screenshots](https://drive.google.com/file/d/1O-NbSWZOfdrvJBCKuBNuxr2B7GijJtL4/view?usp=sharing)
+
+### 5. Final Assessment Report
+[View Executive Data Quality Assessment Report](https://docs.google.com/document/d/16fV3XWK-lyCzPSEg7HpYfjfnloKaRBNH/edit?usp=sharing&ouid=114671762788041023397&rtpof=true&sd=true)
 
 ## Project Structure
 
@@ -110,11 +125,21 @@ Olist-Data-Quality-Assessment/
 ├── SQL/
 │   └── Olist_Data_Quality_Assessment.sql
 │
-├── Report/
-│   └── Executive_Data_Quality_Assessment_Report.docx
+├── Dataset/
+│   └── README.md
 │
-├── Results/
-│   └── SQL_Output_Results.xlsx
+├── Output/
+│   ├── README.md
+│   ├── SQL_Output_Results.xlsx
+│   └── SQL_Output_Screenshots/
 │
-└── Screenshots/
-    └── SQL_Output_Screenshots/
+└── Report/
+    ├── README.md
+    └── Executive_Data_Quality_Assessment_Report.docx
+```
+
+## Conclusion
+
+This project demonstrates practical SQL skills in data profiling, data validation, anomaly detection, referential integrity testing, and data quality assessment.
+
+The analysis provides a structured approach to evaluating data reliability and transforming SQL query results into meaningful business insights and actionable recommendations.
